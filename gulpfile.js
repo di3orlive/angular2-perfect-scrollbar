@@ -17,18 +17,8 @@ gulp.task('inline', function() {
   var tsResult = gulp.src(['typings/index.d.ts', 'src/**/*.ts'], {
       base: 'src'
     })
-    .pipe(sourcemaps.init()) // This means sourcemaps will be generated
-    .pipe(inlineNg2Template({
-      base: 'src',
-      styleProcessor: function(path, file, cb) {
-        var result =  sass.renderSync({
-          data: file
-        });
-
-        return cb(null, result.css.toString().trim());
-      }
-
-    }))
+    .pipe(sourcemaps.init())
+    .pipe(inlineNg2Template({ base: 'src' }))
     .pipe(tsc(tsProject));
 
   return merge([

@@ -1,2 +1,2 @@
 export * from './interfaces';
-export * from './perfect-scrollbar.directive';
+export * from './perfect-scrollbar.component';

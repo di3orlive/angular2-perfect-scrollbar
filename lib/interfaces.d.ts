@@ -1,11 +1,9 @@
 import { Provider } from '@angular/core';
-export interface FontPickerConfigInterface {
-    apiKey?: string;
+export interface PerfectScrollbarConfigInterface {
 }
-export declare class FontPickerConfig implements FontPickerConfigInterface {
-    apiKey: string;
+export declare class PerfectScrollbarConfig implements PerfectScrollbarConfigInterface {
 }
 /**
- * Creates a provider for a {@link FontPickerConfig})
+ * Creates a provider for a {@link PerfectScrollbarConfig})
  */
-export declare function provideFontPickerConfig(configInterface: FontPickerConfigInterface): Provider;
+export declare function providePerfectScrollbarConfig(configInterface: PerfectScrollbarConfigInterface): Provider;
