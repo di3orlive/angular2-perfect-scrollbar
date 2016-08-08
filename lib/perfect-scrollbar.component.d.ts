@@ -7,5 +7,6 @@ export declare class PerfectScrollbarComponent implements DoCheck, OnDestroy, Af
     ngDoCheck(): void;
     ngOnDestroy(): void;
     ngAfterViewInit(): void;
+    update(): void;
     scrollTo(position: number): void;
 }

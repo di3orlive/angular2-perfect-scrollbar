@@ -34,6 +34,10 @@ export class PerfectScrollbarComponent implements DoCheck, OnDestroy, AfterViewI
     Ps.initialize(this.elementRef.nativeElement);
   }
 
+  update() {
+    Ps.update(this.elementRef.nativeElement);
+  }
+
   scrollTo(position: number) {
     this.elementRef.nativeElement.scrollTop = position;
 
